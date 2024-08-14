@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.nav-header {
+    width: 100%;
+    background-color: #111;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo, .search-bar, .cart, .user-icon {
+    display: flex;
+    align-items: center;
+}
+
+.user-icon i, .cart {
+    font-size: px;
+    cursor: pointer;
+}
+
+.logo a, .cart {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    margin: 0 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 2px 0 0 2px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+}
+
+.search-bar button i {
+    font-size: 18px;
+}
+
+.cart button {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cart .cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: #fff;
+    border-radius: 50%;
+    padding: 3px 6px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.btn-add {
+    background-color: #007bff;
+    border-radius: 15px;
+}
+
+h1 {
+    text-align: center;
+    text-decoration:underline;
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #1c1c1c;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1000;
+}
+
+/* Estilos para la barra lateral */
+.sidebar {
+    width: 250px;
+    background-color: #1c1c1c;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Inicialmente oculto */
+    overflow-x: hidden;
+    transition: left 0.3s ease;
+    padding-top: 20px;
+    color: #fff;
+    z-index: 999;
+}
+
+/* Clase para mostrar el menú */
+.sidebar.active {
+    left: 0;
+}
+
+/* Estilos para la lista */
+.sidebar ul {
+    list-style-type: none;
+    padding-top: 50px;
+    margin: 0;
+}
+
+/* Estilos para los elementos de la lista */
+.sidebar ul li {
+    padding: 10px;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos para los enlaces */
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilos para los íconos */
+.sidebar ul li a i {
+    margin-right: 10px;
+}
+
+/* Estilo al pasar el cursor sobre un elemento */
+.sidebar ul li:hover {
+    background-color: #333;
+}
+
+/* Estilo para la flecha de la derecha */
+.sidebar ul li a .fa-chevron-right {
+    margin-left: auto;
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor del footer */
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Secciones del footer */
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+/* Título de cada sección del footer */
+.footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Lista de enlaces en el footer */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Elementos de la lista en el footer */
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+/* Enlaces en el footer */
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Efecto hover en los enlaces del footer */
+.footer-section ul li a:hover {
+    color: #ccc;
+}
+
+/* Íconos de redes sociales en el footer */
+.social-icons a {
+    color: #fff;
+    font-size: 18px;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Efecto hover en los íconos de redes sociales */
+.social-icons a:hover {
+    color: #ccc;
+}
+
+/* Pie de página inferior */
+.footer-bottom {
+    background-color: #111;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Estilo del texto en el pie de página inferior */
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+h4 {
+    text-align: center;
+}
+
+.footer-section {
+    text-align: center;
+}
